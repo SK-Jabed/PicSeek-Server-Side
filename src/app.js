@@ -11,6 +11,9 @@ app.use(cors());
 app.use(express.json());
 app.use(logger);
 
+
+
+
 //Routes
 app.use("/api/v1/image", imageRouter);
 app.use("/api/v1/comment", commentRouter);
