@@ -1,17 +1,18 @@
+//definition
 require("dotenv").config();
 const express = require("express");
-const cors = require("cors");
 const app = express();
+const cors = require("cors");
 const logger = require("./middleware/logger");
 const imageRouter = require("./routes/image.route");
 const commentRouter = require("./routes/comment.route");
 
-//Middleware
+//middleware
 app.use(cors());
 app.use(express.json());
 app.use(logger);
 
-//Routes
+//routes
 app.use("/api/v1/image", imageRouter);
 app.use("/api/v1/comment", commentRouter);
 
