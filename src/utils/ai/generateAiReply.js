@@ -13,12 +13,10 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "model",
       parts: [{ text: "Okay sir." }],
     },
-
     {
       role: "user",
       parts: [
@@ -29,7 +27,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "model",
       parts: [
@@ -38,7 +35,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "user",
       parts: [
@@ -47,7 +43,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "model",
       parts: [
@@ -56,7 +51,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "user",
       parts: [
@@ -65,7 +59,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "model",
       parts: [
@@ -74,7 +67,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "user",
       parts: [
@@ -83,7 +75,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "model",
       parts: [
@@ -92,7 +83,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "user",
       parts: [
@@ -101,7 +91,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "model",
       parts: [
@@ -110,7 +99,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "user",
       parts: [
@@ -119,7 +107,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "model",
       parts: [
@@ -128,7 +115,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "user",
       parts: [
@@ -137,7 +123,6 @@ const chat = model.startChat({
         },
       ],
     },
-
     {
       role: "model",
       parts: [
@@ -146,7 +131,6 @@ const chat = model.startChat({
         },
       ],
     },
-    
     {
       role: "user",
       parts: [
@@ -181,6 +165,7 @@ const chat = model.startChat({
     },
   ],
 });
+
 const generateAiReply = async (prompt, comment) => {
   const finalPrompt = `prompt: ${prompt}
   comment:${comment}

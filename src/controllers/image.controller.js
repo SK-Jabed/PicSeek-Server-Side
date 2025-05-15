@@ -23,7 +23,6 @@ const insertAiImage = async (req, res) => {
     console.log(data);
 
     // 4- insert data in mongodb
-
     const document = {
       email,
       username,
@@ -37,7 +36,6 @@ const insertAiImage = async (req, res) => {
     };
 
     const result = await imageCollection.insertOne(document);
-
     console.log(document);
 
     // 5- send response
@@ -60,6 +58,7 @@ const getAllImage = async (req, res) => {
     res.status(500).send(err);
   }
 };
+
 const getSingleImage = async (req, res) => {
   try {
     const { id } = req.params;

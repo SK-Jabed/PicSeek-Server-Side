@@ -1,4 +1,5 @@
 require("dotenv").config();
+
 const getImageBuffer = async (prompt, category) => {
   const finalPrompt = `imagine a ${category} : ${prompt}`;
   console.log(finalPrompt);
@@ -15,7 +16,7 @@ const getImageBuffer = async (prompt, category) => {
   });
 
   const buffer = await response.arrayBuffer();
-
   return buffer;
 };
+
 module.exports = getImageBuffer;
