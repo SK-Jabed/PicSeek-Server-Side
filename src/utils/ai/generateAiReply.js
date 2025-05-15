@@ -2,6 +2,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
 const chat = model.startChat({
   history: [
     {
@@ -12,10 +13,12 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "model",
       parts: [{ text: "Okay sir." }],
     },
+
     {
       role: "user",
       parts: [
@@ -26,6 +29,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "model",
       parts: [
@@ -43,6 +47,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "model",
       parts: [
@@ -51,6 +56,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "user",
       parts: [
@@ -59,6 +65,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "model",
       parts: [
@@ -67,6 +74,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "user",
       parts: [
@@ -75,6 +83,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "model",
       parts: [
@@ -83,6 +92,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "user",
       parts: [
@@ -91,6 +101,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "model",
       parts: [
@@ -99,6 +110,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "user",
       parts: [
@@ -107,6 +119,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "model",
       parts: [
@@ -115,6 +128,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "user",
       parts: [
@@ -123,6 +137,7 @@ const chat = model.startChat({
         },
       ],
     },
+
     {
       role: "model",
       parts: [
@@ -131,6 +146,7 @@ const chat = model.startChat({
         },
       ],
     },
+    
     {
       role: "user",
       parts: [
