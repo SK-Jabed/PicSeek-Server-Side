@@ -7,12 +7,12 @@ const logger = require("./middleware/logger");
 const imageRouter = require("./routes/image.route");
 const commentRouter = require("./routes/comment.route");
 
-//middleware
+// middleware
 app.use(cors());
 app.use(express.json());
 app.use(logger);
 
-//routes
+// routes
 app.use("/api/v1/image", imageRouter);
 app.use("/api/v1/comment", commentRouter);
 
