@@ -11,8 +11,9 @@ const postUserComment = async (req, res) => {
     });
     return;
   }
-  
+
   const reply = await generateAiReply(prompt, comment);
+  
   const document = {
     prompt,
     imageId,
@@ -21,6 +22,7 @@ const postUserComment = async (req, res) => {
     createdAt: new Date().toISOString(),
     reply,
   };
+
   const result = await commentCollection.insertOne(document);
   res.send({ ...result, reply });
 };
