@@ -3,6 +3,7 @@ const { commentCollection } = require("../utils/connectDB");
 
 const postUserComment = async (req, res) => {
   const { imageId, prompt, email, comment } = req.body;
+
   if (!imageId || !prompt || !email) {
     res.status(400).send({
       status: 400,
@@ -10,6 +11,7 @@ const postUserComment = async (req, res) => {
     });
     return;
   }
+  
   const reply = await generateAiReply(prompt, comment);
   const document = {
     prompt,
