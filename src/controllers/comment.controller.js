@@ -13,7 +13,7 @@ const postUserComment = async (req, res) => {
   }
 
   const reply = await generateAiReply(prompt, comment);
-  
+
   const document = {
     prompt,
     imageId,
