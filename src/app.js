@@ -7,6 +7,9 @@ const logger = require("./middleware/logger");
 const imageRouter = require("./routes/image.route");
 const commentRouter = require("./routes/comment.route");
 
+
+
+
 // middleware
 app.use(cors());
 app.use(express.json());
